@@ -1,3 +1,16 @@
-**Install to database 'multiple'**
+1. Launch the application.
+2. Make http request http://localhost:8080/admin/registration
 
-INSERT INTO `role` (`id`, `name`) VALUES ('1', 'ROLE_USER'), ('2', 'ROLE_ADMIN');
+   Put json in the request body:
+   `{
+   "email":"admin@admin.com",
+   "password":"1111"
+   }`
+
+3. Make http request http://localhost:8080/seller/registration
+
+   Put json in the request body:
+   `{
+   "email":"seller@seller.com",
+   "password":"1111"
+   }`
