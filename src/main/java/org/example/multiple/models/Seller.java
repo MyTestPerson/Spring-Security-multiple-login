@@ -3,11 +3,10 @@ package org.example.multiple.models;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name = "seller")
-public class Seller implements Serializable {
+public class Seller {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
