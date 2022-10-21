@@ -1,17 +1,14 @@
 package org.example.multiple.controllers;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/admin")
 public class AdminRegistrationController {
 
-    @PostMapping(value = "/registration")
+    @GetMapping(value = "/registration")
     public ResponseEntity<?> registerAdmin() {
 
         return ResponseEntity.ok("OK");
